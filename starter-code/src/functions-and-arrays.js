@@ -532,7 +532,7 @@ function greatestProduct(matrix) {
   for (let column = 0; column <= matrix[0].length - 4; column++) {
     // the column is limited to smaller than matrix.length[0]-3 due to the edge cases, to calculate product of 4 subsequent element, we need to make sure the last starting ele
     for (let row = 0; row < matrix; row++) {
-      let rowProduct =
+      let columnProduct =
         matrix[column][row] *
         matrix[column + 1][row] *
         matrix[column + 2][row] *
